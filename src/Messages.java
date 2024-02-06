@@ -10,6 +10,10 @@ public class Messages {
     txtfield.setBounds(50,50,150,20);
     JButton btn1 = new JButton("Click");
     btn1.setBounds(50,100,95,30);
+    frm.add(btn1);
+    frm.add(txtfield);
+    frm.setSize(400,400);
+    frm.setVisible(true);
 
 
 
