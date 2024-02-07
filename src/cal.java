@@ -15,11 +15,14 @@ public class cal {
         //label2
         l2=new JLabel("Number 2.");
         l2.setBounds(50,100, 100,30);
+        //second textfied
+        num2 = new JTextField();
+        num2.setBounds(120,100, 100,30);
 
 
        //addings
         f.add(l1); f.add(l2);
-        f.add(num1);
+        f.add(num1); f.add(num2);
         f.setSize(300,300);
         f.setLayout(null);
         f.setVisible(true);
