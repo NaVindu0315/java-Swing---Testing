@@ -11,10 +11,10 @@ public class cal implements ActionListener {
         JTextField num1,num2;
         JButton btnadd,btnsub;
 
-        int ans= 0;
+        String ans= "";
         ///variabls for calculating
         String txt1choice,txt2choice;
-        int number1,number2;
+        int number1,number2,intans=0;
 
         cal()
         {
@@ -36,9 +36,11 @@ public class cal implements ActionListener {
             //buttons
             btnadd = new JButton("Add");
             btnadd.setBounds(50,150,60,20);
+            btnadd.addActionListener(this);
 
             btnsub = new JButton("subtract");
             btnsub.setBounds(130,150,80,20);
+            btnsub.addActionListener(this);
 
             //answer label
             lblanswer = new JLabel(String.valueOf(ans));
@@ -67,6 +69,14 @@ public class cal implements ActionListener {
             //converting
          number1 = Integer.parseInt(txt1choice);
          number2 =Integer.parseInt(txt2choice);
+
+         if(e.getSource()==btnadd)
+         {
+
+         }
+         
+
+
 
 
 
