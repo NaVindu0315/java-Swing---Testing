@@ -7,9 +7,11 @@ public class cal implements ActionListener {
 
         //initializing
         JFrame f= new JFrame("Calculator");
-        JLabel l1,l2;
+        JLabel l1,l2 , lblanswer;
         JTextField num1,num2;
         JButton btnadd,btnsub;
+
+        int ans= 0;
 
         cal()
         {
@@ -35,12 +37,17 @@ public class cal implements ActionListener {
             btnsub = new JButton("subtract");
             btnsub.setBounds(130,150,80,20);
 
+            //answer label
+            lblanswer = new JLabel(String.valueOf(ans));
+            lblanswer.setBounds(120,190,50,50);
+
 
             //addings
             f.add(l1); f.add(l2);
             f.add(num1); f.add(num2);
             f.add(btnadd);
             f.add(btnsub);
+            f.add(lblanswer);
 
             //fram size
             f.setSize(300,300);
@@ -51,6 +58,8 @@ public class cal implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+
+
 
     }
 }
