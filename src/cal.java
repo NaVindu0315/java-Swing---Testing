@@ -12,6 +12,9 @@ public class cal implements ActionListener {
         JButton btnadd,btnsub;
 
         int ans= 0;
+        ///variabls for calculating
+        String txt1choice,txt2choice;
+        int number1,number2;
 
         cal()
         {
@@ -58,6 +61,12 @@ public class cal implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+
+            txt1choice = num1.getText();
+            txt2choice = num2.getText();
+            //converting
+         number1 = Integer.parseInt(txt1choice);
+         number2 =Integer.parseInt(txt2choice);
 
 
 
