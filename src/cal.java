@@ -1,6 +1,7 @@
 import javax.swing.*;
+import java.awt.event.ActionListener;
 
-public class cal {
+public class cal implements ActionListener {
 
     {
         //initializing
@@ -16,12 +17,15 @@ public class cal {
         //firs textfied
         num1 = new JTextField();
         num1.setBounds(120,50, 100,30);
+        num1.addActionListener(this);
+
         //label2
         l2=new JLabel("Number 2.");
         l2.setBounds(50,100, 100,30);
         //second textfied
         num2 = new JTextField();
         num2.setBounds(120,100, 100,30);
+        num2.addActionListener(this);
         //buttons
         btnadd = new JButton("Add");
         btnadd.setBounds(50,150,60,20);
