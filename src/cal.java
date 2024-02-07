@@ -18,6 +18,7 @@ public class cal {
 
         lblnum1 = new JLabel("Number 1");
         lblnum1.setBounds(20,40,300,100);
+        lblnum1.setLocation(30,40);
 
 
 
