@@ -26,11 +26,15 @@ public class cal {
         btnadd = new JButton("Add");
         btnadd.setBounds(50,150,60,20);
 
+        btnsub = new JButton("subtract");
+        btnsub.setBounds(130,150,80,20);
+
 
        //addings
         f.add(l1); f.add(l2);
         f.add(num1); f.add(num2);
         f.add(btnadd);
+        f.add(btnsub);
 
         //fram size
         f.setSize(300,300);
