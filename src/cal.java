@@ -16,6 +16,9 @@ public class cal {
         frm = new JFrame("Calculator");
         frm.setSize(500,500);
 
+        lblnum1 = new JLabel("Number 1");
+        lblnum1.setBounds(20,40,300,100);
+
 
 
 
@@ -23,6 +26,7 @@ public class cal {
 
 
         //display
+        frm.add(lblnum1);
         frm.setVisible(true);
 
     }
