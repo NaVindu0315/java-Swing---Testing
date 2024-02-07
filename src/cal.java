@@ -6,6 +6,7 @@ public class cal {
     cal()
     {
         frm = new JFrame("Calculator");
+        frm.setSize(500,500);
 
 
 
