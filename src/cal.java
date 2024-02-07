@@ -77,6 +77,8 @@ public class cal implements ActionListener {
          }
          else if(e.getSource()== btnsub)
          {
+             intans = number1-number2;
+
 
          }
          ans = String.valueOf(intans);
