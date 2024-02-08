@@ -8,13 +8,10 @@ public class cal implements ActionListener {
         //initializing
         JFrame f= new JFrame("Calculator");
         JLabel l1,l2 , lblanswer;
-        JTextField num1,num2;
-        JButton btnadd,btnsub;
+        JTextField num1,num2,txtans;
+        JButton btnadd,btnsub,btnclear;
 
-        String ans= "";
-        ///variabls for calculating
-        String txt1choice,txt2choice;
-        int number1,number2,intans=0;
+
 
         cal()
         {
@@ -43,8 +40,16 @@ public class cal implements ActionListener {
             btnsub.addActionListener(this);
 
             //answer label
-            lblanswer = new JLabel(String.valueOf(ans));
-            lblanswer.setBounds(120,190,50,50);
+            txtans = new JTextField();
+            txtans.setBounds(60,190,50,30);
+            txtans.setVisible(false);
+
+            btnclear = new JButton("Clear");
+            btnclear.setBounds(150,190,90,30);
+            btnclear.addActionListener(this);
+
+            //lblanswer = new JLabel(String.valueOf(ans));
+           /// lblanswer.setBounds(120,190,50,50);
 
 
             //addings
@@ -52,7 +57,9 @@ public class cal implements ActionListener {
             f.add(num1); f.add(num2);
             f.add(btnadd);
             f.add(btnsub);
-            f.add(lblanswer);
+            f.add(txtans);
+            f.add(btnclear);
+            //f.add(lblanswer);
 
             //fram size
             f.setSize(300,300);
@@ -63,6 +70,10 @@ public class cal implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        String ans= "";
+        ///variabls for calculating
+        String txt1choice,txt2choice;
+        int number1,number2,intans=0;
 
             txt1choice = num1.getText();
             txt2choice = num2.getText();
@@ -73,15 +84,29 @@ public class cal implements ActionListener {
          if(e.getSource()==btnadd)
          {
              intans = number1+number2;
+             ans = String.valueOf(intans);
+             txtans.setText(ans);
+             txtans.setVisible(true);
 
          }
          else if(e.getSource()== btnsub)
          {
              intans = number1-number2;
+             ans = String.valueOf(intans);
+             txtans.setText(ans);
+             txtans.setVisible(true);
 
 
          }
-         ans = String.valueOf(intans);
+         else if(e.getSource()==btnclear)
+         {
+             txtans.setVisible(true);
+             num1.setText("");
+             num2.setText("");
+             txtans.setText("");
+         }
+
+
 
 
 
