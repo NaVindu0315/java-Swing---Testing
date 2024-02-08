@@ -9,7 +9,7 @@ public class cal implements ActionListener {
         JFrame f= new JFrame("Calculator");
         JLabel l1,l2 , lblanswer;
         JTextField num1,num2,txtans;
-        JButton btnadd,btnsub;
+        JButton btnadd,btnsub,btnclear;
 
 
 
@@ -41,8 +41,13 @@ public class cal implements ActionListener {
 
             //answer label
             txtans = new JTextField();
-            txtans.setBounds(120,190,50,50);
+            txtans.setBounds(90,190,50,30);
             txtans.setVisible(false);
+
+            btnclear = new JButton("Clear");
+            btnclear.setBounds(160,190,50,30);
+            btnclear.addActionListener(this);
+
             //lblanswer = new JLabel(String.valueOf(ans));
            /// lblanswer.setBounds(120,190,50,50);
 
