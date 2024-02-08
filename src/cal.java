@@ -52,7 +52,8 @@ public class cal implements ActionListener {
             f.add(num1); f.add(num2);
             f.add(btnadd);
             f.add(btnsub);
-            f.add(lblanswer);
+            f.add(txtans);
+            //f.add(lblanswer);
 
             //fram size
             f.setSize(300,300);
@@ -85,6 +86,9 @@ public class cal implements ActionListener {
 
 
          }
+         ans = String.valueOf(intans);
+         txtans.setText(ans);
+         txtans.setVisible(true);
 
 
 
