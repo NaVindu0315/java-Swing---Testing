@@ -41,11 +41,11 @@ public class cal implements ActionListener {
 
             //answer label
             txtans = new JTextField();
-            txtans.setBounds(90,190,50,30);
+            txtans.setBounds(60,190,50,30);
             txtans.setVisible(false);
 
             btnclear = new JButton("Clear");
-            btnclear.setBounds(160,190,50,30);
+            btnclear.setBounds(150,190,90,30);
             btnclear.addActionListener(this);
 
             //lblanswer = new JLabel(String.valueOf(ans));
@@ -58,6 +58,7 @@ public class cal implements ActionListener {
             f.add(btnadd);
             f.add(btnsub);
             f.add(txtans);
+            f.add(btnclear);
             //f.add(lblanswer);
 
             //fram size
@@ -83,17 +84,28 @@ public class cal implements ActionListener {
          if(e.getSource()==btnadd)
          {
              intans = number1+number2;
+             ans = String.valueOf(intans);
+             txtans.setText(ans);
+             txtans.setVisible(true);
 
          }
          else if(e.getSource()== btnsub)
          {
              intans = number1-number2;
+             ans = String.valueOf(intans);
+             txtans.setText(ans);
+             txtans.setVisible(true);
 
 
          }
-         ans = String.valueOf(intans);
-         txtans.setText(ans);
-         txtans.setVisible(true);
+         else if(e.getSource()==btnclear)
+         {
+             txtans.setVisible(true);
+             num1.setText("");
+             num2.setText("");
+             txtans.setText("");
+         }
+
 
 
 
