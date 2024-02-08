@@ -11,10 +11,7 @@ public class cal implements ActionListener {
         JTextField num1,num2;
         JButton btnadd,btnsub;
 
-        String ans= "";
-        ///variabls for calculating
-        String txt1choice,txt2choice;
-        int number1,number2,intans=0;
+
 
         cal()
         {
@@ -63,6 +60,10 @@ public class cal implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        String ans= "";
+        ///variabls for calculating
+        String txt1choice,txt2choice;
+        int number1,number2,intans=0;
 
             txt1choice = num1.getText();
             txt2choice = num2.getText();
