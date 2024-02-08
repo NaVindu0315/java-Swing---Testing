@@ -8,7 +8,7 @@ public class cal implements ActionListener {
         //initializing
         JFrame f= new JFrame("Calculator");
         JLabel l1,l2 , lblanswer;
-        JTextField num1,num2;
+        JTextField num1,num2,txtans;
         JButton btnadd,btnsub;
 
 
@@ -40,8 +40,11 @@ public class cal implements ActionListener {
             btnsub.addActionListener(this);
 
             //answer label
-            lblanswer = new JLabel(String.valueOf(ans));
-            lblanswer.setBounds(120,190,50,50);
+            txtans = new JTextField();
+            txtans.setBounds(120,190,50,50);
+            txtans.setVisible(false);
+            //lblanswer = new JLabel(String.valueOf(ans));
+           /// lblanswer.setBounds(120,190,50,50);
 
 
             //addings
@@ -82,7 +85,7 @@ public class cal implements ActionListener {
 
 
          }
-         ans = String.valueOf(intans);
+
 
 
 
