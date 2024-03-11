@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.ImageIcon;
 
 public class Main {
 
@@ -14,5 +15,9 @@ public class Main {
         //defining the size of the frame
         frame.setSize(420,420);
         frame.setVisible(true); //to make this visiblew
+
+        //creating image icon
+        ImageIcon image = new ImageIcon("mn.png");
+        frame.setIconImage(image.getImage()); //to chnge icon of frame
     }
 }
