@@ -24,7 +24,23 @@ public class Main {
 
         //chgning color
         frame.getContentPane().setBackground(Color.cyan);*/
+        //calling the class
+        //MyFrame myFrame  = new MyFrame();
 
-        MyFrame myFrame  = new MyFrame();
+        //label create
+        JLabel label = new JLabel();
+        //set the text of the label
+        label.setText("Fuck of MF");
+
+
+        ///label end
+
+        JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(420,420);
+        frame.setVisible(true);
+        //add the label
+        frame.add(label);
+
     }
 }
