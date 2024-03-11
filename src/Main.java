@@ -37,7 +37,8 @@ public class Main {
 
         label.setHorizontalTextPosition(JLabel.CENTER); ///set text lef center or right
         label.setVerticalTextPosition(JLabel.TOP);//to chnge the location of the text
-
+        label.setForeground(Color.RED);// to chnge font color
+        label.setFont(new Font("MV Boli",Font.PLAIN,20));
 
         ///label end
 
