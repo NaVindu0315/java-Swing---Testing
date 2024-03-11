@@ -1,5 +1,6 @@
 import javax.swing.*;
 import javax.swing.ImageIcon;
+import java.awt.*;
 
 public class Main {
 
@@ -19,5 +20,9 @@ public class Main {
         //creating image icon
         ImageIcon image = new ImageIcon("mn.png");
         frame.setIconImage(image.getImage()); //to chnge icon of frame
+
+
+        //chgning color
+        frame.getContentPane().setBackground(Color.cyan);
     }
 }
