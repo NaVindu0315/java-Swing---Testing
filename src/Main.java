@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        JFrame frame = new JFrame();
+        /*JFrame frame = new JFrame();
         //frame assigned name
         //title
         frame.setTitle("title here");
@@ -23,6 +23,8 @@ public class Main {
 
 
         //chgning color
-        frame.getContentPane().setBackground(Color.cyan);
+        frame.getContentPane().setBackground(Color.cyan);*/
+
+        MyFrame myFrame  = new MyFrame();
     }
 }
