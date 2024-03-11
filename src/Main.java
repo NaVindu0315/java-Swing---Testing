@@ -28,9 +28,15 @@ public class Main {
         //MyFrame myFrame  = new MyFrame();
 
         //label create
+        //creating image icon
+        ImageIcon image = new ImageIcon("mn.png");
         JLabel label = new JLabel();
         //set the text of the label
         label.setText("Fuck of MF");
+        label.setIcon(image);
+
+        label.setHorizontalTextPosition(JLabel.CENTER); ///set text lef center or right
+        label.setVerticalTextPosition(JLabel.TOP);//to chnge the location of the text
 
 
         ///label end
