@@ -33,7 +33,8 @@ public class Main {
         JLabel label = new JLabel();
         //set the text of the label
         label.setText("Fuck of MF");
-        label.setIcon(image);
+        label.setIconTextGap(100);//to adjust the gap between  text and image
+        label.setIcon(image);//adding the image
 
         label.setHorizontalTextPosition(JLabel.CENTER); ///set text lef center or right
         label.setVerticalTextPosition(JLabel.TOP);//to chnge the location of the text
