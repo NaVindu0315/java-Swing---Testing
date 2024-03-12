@@ -50,17 +50,18 @@ public class Main {
         label.setVerticalAlignment(JLabel.TOP);  //this changes the location of the label
         label.setHorizontalAlignment(JLabel.CENTER); //horizontal positon of label and icon withing the label
 
-        label.setBounds(70,50,250,250); //after layout setting null from this location can be chgned
+       // label.setBounds(70,50,250,250); //after layout setting null from this location can be chgned
 
         ///label end
 
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420,420);
-        frame.setLayout(null); //to manually change the location of components defualt border layout or something
+        //frame.setLayout(null); //to manually change the location of components defualt border layout or something
         frame.setVisible(true);
         //add the label
         frame.add(label);
+        frame.pack(); //reszie the components according to other components
 
     }
 }
