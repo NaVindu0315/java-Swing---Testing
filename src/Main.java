@@ -35,8 +35,8 @@ public class Main {
         Border border = BorderFactory.createLineBorder(Color.green,3); //creating border
 
         //set the text of the label
-        label.setText("Fuck of MF");
-        label.setIconTextGap(100);//to adjust the gap between  text and image
+        label.setText("Fuck off MF");
+        label.setIconTextGap(40);//to adjust the gap between  text and image
         label.setIcon(image);//adding the image
 
         label.setBackground(Color.black);//chaging the color
@@ -47,6 +47,8 @@ public class Main {
         label.setForeground(Color.RED);// to chnge font color
         label.setFont(new Font("MV Boli",Font.PLAIN,20));
         label.setBorder(border); //calling the border
+        label.setVerticalAlignment(JLabel.TOP);  //this changes the location of the label
+        label.setHorizontalAlignment(JLabel.CENTER); //horizontal positon of label and icon withing the label
 
         ///label end
 
