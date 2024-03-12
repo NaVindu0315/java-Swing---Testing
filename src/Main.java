@@ -59,6 +59,7 @@ public class Main {
          ///3rd video
         JPanel redpanel = new JPanel();
         redpanel.setBackground(Color.red); //panel creation
+        redpanel.setBounds(0,0,250,250);
 
 
         ///controller
@@ -67,6 +68,7 @@ public class Main {
         frame.setSize(750,750);
         frame.setLayout(null); //to manually change the location of components defualt border layout or something
         frame.setVisible(true);
+        frame.add(redpanel);
         //add the label
 
 
