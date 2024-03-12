@@ -1,5 +1,6 @@
 import javax.swing.*;
 import javax.swing.ImageIcon;
+import javax.swing.border.Border;
 import java.awt.*;
 
 public class Main {
@@ -31,6 +32,8 @@ public class Main {
         //creating image icon
         ImageIcon image = new ImageIcon("mn.png");
         JLabel label = new JLabel();
+        Border border = BorderFactory.createLineBorder(Color.green,3); //creating border
+
         //set the text of the label
         label.setText("Fuck of MF");
         label.setIconTextGap(100);//to adjust the gap between  text and image
@@ -43,6 +46,7 @@ public class Main {
         label.setVerticalTextPosition(JLabel.TOP);//to chnge the location of the text
         label.setForeground(Color.RED);// to chnge font color
         label.setFont(new Font("MV Boli",Font.PLAIN,20));
+        label.setBorder(border); //calling the border
 
         ///label end
 
