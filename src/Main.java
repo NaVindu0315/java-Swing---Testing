@@ -36,6 +36,9 @@ public class Main {
         label.setIconTextGap(100);//to adjust the gap between  text and image
         label.setIcon(image);//adding the image
 
+        label.setBackground(Color.black);//chaging the color
+        label.setOpaque(true);//display background color
+
         label.setHorizontalTextPosition(JLabel.CENTER); ///set text lef center or right
         label.setVerticalTextPosition(JLabel.TOP);//to chnge the location of the text
         label.setForeground(Color.RED);// to chnge font color
