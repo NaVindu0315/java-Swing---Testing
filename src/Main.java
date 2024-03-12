@@ -30,6 +30,9 @@ public class Main {
 
         //label create
         //creating image icon
+
+        ///2nd video
+        /*
         ImageIcon image = new ImageIcon("mn.png");
         JLabel label = new JLabel();
         Border border = BorderFactory.createLineBorder(Color.green,3); //creating border
@@ -52,16 +55,21 @@ public class Main {
 
        // label.setBounds(70,50,250,250); //after layout setting null from this location can be chgned
 
-        ///label end
+        ///label end */
+         ///3rd video
+
+
 
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(420,420);
+        frame.setSize(750,750);
         //frame.setLayout(null); //to manually change the location of components defualt border layout or something
         frame.setVisible(true);
         //add the label
-        frame.add(label);
-        frame.pack(); //reszie the components according to other components
+
+
+
+
 
     }
 }
