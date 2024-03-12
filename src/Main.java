@@ -57,13 +57,15 @@ public class Main {
 
         ///label end */
          ///3rd video
+        JPanel redpanel = new JPanel();
+        redpanel.setBackground(Color.red); //panel creation
 
 
-
+        ///controller
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(750,750);
-        //frame.setLayout(null); //to manually change the location of components defualt border layout or something
+        frame.setLayout(null); //to manually change the location of components defualt border layout or something
         frame.setVisible(true);
         //add the label
 
