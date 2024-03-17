@@ -61,8 +61,12 @@ public class Main {
         redpanel.setBackground(Color.red); //panel creation
         redpanel.setBounds(0,0,250,250);
         JPanel bluepanel = new JPanel();
-        bluepanel.setBackground(Color.red); //panel creation
+        bluepanel.setBackground(Color.blue); //panel creation
         bluepanel.setBounds(300,0,250,250);
+
+        JPanel greenpanel = new JPanel();
+        greenpanel.setBackground(Color.green); //panel creation
+        greenpanel.setBounds(600,0,250,250);
 
 
 
@@ -73,6 +77,8 @@ public class Main {
         frame.setLayout(null); //to manually change the location of components defualt border layout or something
         frame.setVisible(true);
         frame.add(redpanel);
+        frame.add(greenpanel);
+        frame.add(bluepanel);
         //add the label
 
 
