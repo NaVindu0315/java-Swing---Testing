@@ -60,6 +60,10 @@ public class Main {
         JPanel redpanel = new JPanel();
         redpanel.setBackground(Color.red); //panel creation
         redpanel.setBounds(0,0,250,250);
+        JPanel bluepanel = new JPanel();
+        bluepanel.setBackground(Color.red); //panel creation
+        bluepanel.setBounds(300,0,250,250);
+
 
 
         ///controller
