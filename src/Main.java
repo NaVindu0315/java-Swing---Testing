@@ -56,7 +56,7 @@ public class Main {
        // label.setBounds(70,50,250,250); //after layout setting null from this location can be chgned
 
         ///label end */
-        ImageIcon icon = new ImageIcon("mn.png");
+        ImageIcon icon = new ImageIcon("dudu.png");
 
 
 
@@ -64,7 +64,8 @@ public class Main {
         JLabel label = new JLabel();
         label.setText("Hi");
         label.setIcon(icon);
-        label.resize(25,25);
+       // label.resize(25,25);
+       // label.setVerticalAlignment(j);
         JPanel redpanel = new JPanel();
         redpanel.setBackground(Color.red); //panel creation
         redpanel.setBounds(0,0,250,250);
