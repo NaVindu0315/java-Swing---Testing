@@ -56,11 +56,12 @@ public class Main {
        // label.setBounds(70,50,250,250); //after layout setting null from this location can be chgned
 
         ///label end */
-        ImageIcon icon = new ImageIcon("dudu.png");
 
 
 
+/*
          ///3rd video
+        ImageIcon icon = new ImageIcon("dudu.png");
         JLabel label = new JLabel();
         label.setText("Hi");
         label.setIcon(icon);
@@ -85,7 +86,11 @@ public class Main {
         JPanel greenpanel = new JPanel();
         greenpanel.setBackground(Color.green); //panel creation
         greenpanel.setBounds(0,250,250,250);
-        greenpanel.setLayout(null);
+        greenpanel.setLayout(null);*/
+
+        //4th
+        new buttonclass();
+        /*MyFrame frame1 =  new MyFrame();
 
 
 
@@ -94,14 +99,8 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(750,750);
         frame.setLayout(null); //to manually change the location of components defualt border layout or something
-        frame.setVisible(true);
-        //redpanel.setLayout(null);
+        frame.setVisible(true);*/
 
-        redpanel.add(label);
-        frame.add(redpanel);
-        frame.add(greenpanel);
-        frame.add(bluepanel);
-        //add the label
 
 
 
