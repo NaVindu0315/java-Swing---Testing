@@ -56,17 +56,28 @@ public class Main {
        // label.setBounds(70,50,250,250); //after layout setting null from this location can be chgned
 
         ///label end */
+        ImageIcon icon = new ImageIcon("mn.png");
+
+
+
          ///3rd video
+        JLabel label = new JLabel();
+        label.setText("Hi");
+        label.setIcon(icon);
+        label.resize(25,25);
         JPanel redpanel = new JPanel();
         redpanel.setBackground(Color.red); //panel creation
         redpanel.setBounds(0,0,250,250);
+        redpanel.setLayout(new BorderLayout());
+
+
         JPanel bluepanel = new JPanel();
         bluepanel.setBackground(Color.blue); //panel creation
-        bluepanel.setBounds(300,0,250,250);
+        bluepanel.setBounds(250,0,250,250);
 
         JPanel greenpanel = new JPanel();
         greenpanel.setBackground(Color.green); //panel creation
-        greenpanel.setBounds(600,0,250,250);
+        greenpanel.setBounds(0,250,250,250);
 
 
 
@@ -76,6 +87,9 @@ public class Main {
         frame.setSize(750,750);
         frame.setLayout(null); //to manually change the location of components defualt border layout or something
         frame.setVisible(true);
+        //redpanel.setLayout(null);
+
+        redpanel.add(label);
         frame.add(redpanel);
         frame.add(greenpanel);
         frame.add(bluepanel);
