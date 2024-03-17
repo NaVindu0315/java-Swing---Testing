@@ -65,23 +65,27 @@ public class Main {
         label.setText("Hi");
         label.setIcon(icon);
        // label.resize(25,25);
-        label.setVerticalAlignment(JLabel.BOTTOM);
-        label.setHorizontalAlignment(JLabel.RIGHT);
+        //label.setVerticalAlignment(JLabel.BOTTOM);
+        //label.setHorizontalAlignment(JLabel.RIGHT);
+        label.setBounds(10,40,75,75);
 
 
         JPanel redpanel = new JPanel();
         redpanel.setBackground(Color.red); //panel creation
         redpanel.setBounds(0,0,250,250);
-        redpanel.setLayout(new BorderLayout());
+        redpanel.setLayout(null);
 
 
         JPanel bluepanel = new JPanel();
         bluepanel.setBackground(Color.blue); //panel creation
         bluepanel.setBounds(250,0,250,250);
+        bluepanel.setLayout(null);
+
 
         JPanel greenpanel = new JPanel();
         greenpanel.setBackground(Color.green); //panel creation
         greenpanel.setBounds(0,250,250,250);
+        greenpanel.setLayout(null);
 
 
 
