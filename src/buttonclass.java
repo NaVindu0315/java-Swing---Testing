@@ -9,10 +9,13 @@ public class buttonclass extends JFrame implements ActionListener {
         ImageIcon icon = new ImageIcon("dudu.png");
 
 
-        button.setText("Payya");
+        button.setText("Doo Baba");
         button.setFocusable(false);
         button.setBounds(200,100,100,50);
         button.addActionListener(this);
+        button.setIcon(icon);
+        button.setHorizontalTextPosition(JButton.CENTER);
+        button.setVerticalTextPosition(JButton.BOTTOM);
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
