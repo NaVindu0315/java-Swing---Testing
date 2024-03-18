@@ -11,16 +11,18 @@ public class FlowLayouts extends JFrame {
         this.setSize(500,500);
         this.setLayout(null); //to manually change the location of components defualt border layout or something
         this.setVisible(true);
-        this.setLayout(new FlowLayout());
+        this.setLayout(new FlowLayout(FlowLayout.CENTER,0,0));
 
-        JButton button1 = new JButton();
+        JPanel panel = new JPanel();
+        panel.setPreferredSize(new Dimension(250,250));
+        panel.setBackground(Color.lightGray);
 
-        this.add(new JButton("1"));
-        this.add(new JButton("2"));
-        this.add(new JButton("3"));
-        this.add(new JButton("4"));
-        this.add(new JButton("5"));
-        this.add(new JButton("6"));
+        panel.add(new JButton("1"));
+        panel.add(new JButton("2"));
+        panel.add(new JButton("3"));
+        panel.add(new JButton("4"));
+        panel.add(new JButton("5"));
+        panel.add(new JButton("6"));
 
 
 
