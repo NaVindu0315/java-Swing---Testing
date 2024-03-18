@@ -52,15 +52,23 @@ public class BorderLayouts extends JFrame {
         panel9.setBackground(Color.lightGray);
         panel10.setBackground(Color.white);
 
-        panel6.setPreferredSize(new Dimension(100,50));
+        panel6.setPreferredSize(new Dimension(50,50));
 
-        panel7.setPreferredSize(new Dimension(100,100));
+        panel7.setPreferredSize(new Dimension(50,50));
 
-        panel8.setPreferredSize(new Dimension(100,100));
+        panel8.setPreferredSize(new Dimension(50,50));
 
-        panel9.setPreferredSize(new Dimension(100,100));
+        panel9.setPreferredSize(new Dimension(50,50));
 
-        panel10.setPreferredSize(new Dimension(100,100));
+        panel10.setPreferredSize(new Dimension(50,50));
+
+        panel5.add(panel6,BorderLayout.NORTH);
+
+        panel5.add(panel7,BorderLayout.WEST);
+        panel5.add(panel8,BorderLayout.EAST);
+        panel5.add(panel9,BorderLayout.SOUTH);
+        panel5.add(panel10,BorderLayout.CENTER);
+
 
 
         // ------panels end
