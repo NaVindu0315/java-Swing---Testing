@@ -16,6 +16,7 @@ public class FlowLayouts extends JFrame {
         JPanel panel = new JPanel();
         panel.setPreferredSize(new Dimension(250,250));
         panel.setBackground(Color.lightGray);
+        panel.setLayout(new FlowLayout());
 
         panel.add(new JButton("1"));
         panel.add(new JButton("2"));
@@ -23,6 +24,8 @@ public class FlowLayouts extends JFrame {
         panel.add(new JButton("4"));
         panel.add(new JButton("5"));
         panel.add(new JButton("6"));
+
+        this.add(panel);
 
 
 
