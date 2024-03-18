@@ -26,6 +26,8 @@ public class BorderLayouts extends JFrame {
         panel4.setBackground(Color.magenta);
         panel5.setBackground(Color.blue);
 
+        panel5.setLayout(new BorderLayout());
+
         panel1.setPreferredSize(new Dimension(100,50));
 
         panel2.setPreferredSize(new Dimension(100,100));
@@ -35,6 +37,33 @@ public class BorderLayouts extends JFrame {
         panel4.setPreferredSize(new Dimension(100,100));
 
         panel5.setPreferredSize(new Dimension(100,100));
+
+        ///-----sub  panels
+
+        JPanel panel6 = new JPanel();
+        JPanel panel7 = new JPanel();
+        JPanel panel8 = new JPanel();
+        JPanel panel9 = new JPanel();
+        JPanel panel10 = new JPanel();
+
+        panel6.setBackground(Color.black);
+        panel7.setBackground(Color.darkGray);
+        panel8.setBackground(Color.gray);
+        panel9.setBackground(Color.lightGray);
+        panel10.setBackground(Color.white);
+
+        panel6.setPreferredSize(new Dimension(100,50));
+
+        panel7.setPreferredSize(new Dimension(100,100));
+
+        panel8.setPreferredSize(new Dimension(100,100));
+
+        panel9.setPreferredSize(new Dimension(100,100));
+
+        panel10.setPreferredSize(new Dimension(100,100));
+
+
+        // ------panels end
 
 
         this.add(panel1,BorderLayout.NORTH);
