@@ -11,8 +11,10 @@ public class buttonclass extends JFrame implements ActionListener {
         ImageIcon icon = new ImageIcon("dudu.png");
         ImageIcon icon2 = new ImageIcon("bubu.png");
         lbl1.setIcon(icon2);
-        lbl1.setBounds(150,25,150,150);
+        lbl1.setBounds(200,150,150,150);
         lbl1.setVisible(false);
+        lbl1.setBackground(Color.BLACK);
+        lbl1.setBorder(BorderFactory.createLineBorder(Color.black));
 
 
         button.setText("Doo Baba");
@@ -43,6 +45,7 @@ public class buttonclass extends JFrame implements ActionListener {
         if(e.getSource()==button)
         {
             System.out.println("paka");
+            lbl1.setVisible(true);
         }
     }
 }
