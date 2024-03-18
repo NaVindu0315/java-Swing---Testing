@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -16,6 +17,9 @@ public class buttonclass extends JFrame implements ActionListener {
         button.setIcon(icon);
         button.setHorizontalTextPosition(JButton.CENTER);
         button.setVerticalTextPosition(JButton.BOTTOM);
+        button.setForeground(Color.cyan);
+        button.setBackground(Color.gray);
+        button.setBorder(BorderFactory.createEtchedBorder());
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
