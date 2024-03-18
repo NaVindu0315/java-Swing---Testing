@@ -5,9 +5,14 @@ import java.awt.event.ActionListener;
 
 public class buttonclass extends JFrame implements ActionListener {
     JButton button = new JButton();
+    JLabel lbl1 = new JLabel();
     buttonclass()
     {
         ImageIcon icon = new ImageIcon("dudu.png");
+        ImageIcon icon2 = new ImageIcon("bubu.png");
+        lbl1.setIcon(icon2);
+        lbl1.setBounds(150,25,150,150);
+        lbl1.setVisible(false);
 
 
         button.setText("Doo Baba");
@@ -21,12 +26,15 @@ public class buttonclass extends JFrame implements ActionListener {
         button.setBackground(Color.gray);
         button.setBorder(BorderFactory.createEtchedBorder());
 
+
+
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
         this.setSize(500,500);
         this.setVisible(true);
 
         this.add(button);
+        this.add(lbl1);
 
     }
 
