@@ -11,7 +11,7 @@ public class BorderLayouts extends JFrame {
         this.setSize(750,750);
         this.setLayout(null); //to manually change the location of components defualt border layout or something
         this.setVisible(true);
-        this.setLayout(new BorderLayout());
+        this.setLayout(new BorderLayout(10,0));
 
 
         JPanel panel1 = new JPanel();
@@ -26,7 +26,7 @@ public class BorderLayouts extends JFrame {
         panel4.setBackground(Color.magenta);
         panel5.setBackground(Color.blue);
 
-        panel1.setPreferredSize(new Dimension(100,100));
+        panel1.setPreferredSize(new Dimension(100,50));
 
         panel2.setPreferredSize(new Dimension(100,100));
 
@@ -38,10 +38,10 @@ public class BorderLayouts extends JFrame {
 
 
         this.add(panel1,BorderLayout.NORTH);
-        //this.add(panel2);
-        //this.add(panel3);
-        //this.add(panel4);
-        //this.add(panel5);
+        this.add(panel2,BorderLayout.WEST);
+        this.add(panel3,BorderLayout.EAST);
+        this.add(panel4,BorderLayout.SOUTH);
+        this.add(panel5,BorderLayout.CENTER);
 
 
     }
