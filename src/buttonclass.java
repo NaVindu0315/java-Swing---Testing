@@ -6,8 +6,11 @@ public class buttonclass extends JFrame implements ActionListener {
     JButton button = new JButton();
     buttonclass()
     {
+        ImageIcon icon = new ImageIcon("dudu.png");
+
 
         button.setText("Payya");
+        button.setFocusable(false);
         button.setBounds(200,100,100,50);
         button.addActionListener(this);
 
