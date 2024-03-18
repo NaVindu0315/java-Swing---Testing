@@ -1,3 +1,5 @@
+import layouts.BorderLayouts;
+
 import javax.swing.*;
 import javax.swing.ImageIcon;
 import javax.swing.border.Border;
@@ -89,17 +91,15 @@ public class Main {
         greenpanel.setLayout(null);*/
 
         //4th
-        new buttonclass();
-        /*MyFrame frame1 =  new MyFrame();
+       // new buttonclass();
+        /*MyFrame frame1 =  new MyFrame();*/
 
 
 
         ///controller
-        JFrame frame = new JFrame();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(750,750);
-        frame.setLayout(null); //to manually change the location of components defualt border layout or something
-        frame.setVisible(true);*/
+        new BorderLayouts();
+
+
 
 
 
