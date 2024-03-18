@@ -37,6 +37,12 @@ public class BorderLayouts extends JFrame {
         panel5.setPreferredSize(new Dimension(100,100));
 
 
+        this.add(panel1,BorderLayout.NORTH);
+        //this.add(panel2);
+        //this.add(panel3);
+        //this.add(panel4);
+        //this.add(panel5);
+
 
     }
 }
