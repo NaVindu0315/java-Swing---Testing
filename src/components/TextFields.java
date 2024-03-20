@@ -21,6 +21,10 @@ public class TextFields extends JFrame implements ActionListener {
         textField.setForeground(Color.GREEN);
         textField.setBackground(Color.black);
         textField.setCaretColor(Color.white);
+        textField.setText("username");
+
+
+
 
 
         jbtn.addActionListener(this);
@@ -37,7 +41,11 @@ public class TextFields extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
     if(e.getSource()==jbtn)
     {
+
         System.out.println("welcome "+textField.getText());
+        //once clciked
+        jbtn.setEnabled(false);
+        textField.setEditable(false);
     }
     }
 }
