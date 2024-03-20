@@ -30,7 +30,7 @@ public class Main {
         //chgning color
         frame.getContentPane().setBackground(Color.cyan);*/
         //calling the class
-        //MyFrame myFrame  = new MyFrame();
+        //components.MyFrame myFrame  = new components.MyFrame();
 
         //label create
         //creating image icon
@@ -93,8 +93,8 @@ public class Main {
         greenpanel.setLayout(null);*/
 
         //4th
-       // new buttonclass();
-        /*MyFrame frame1 =  new MyFrame();*/
+       // new btns.buttonclass();
+        /*components.MyFrame frame1 =  new components.MyFrame();*/
 
 
 
