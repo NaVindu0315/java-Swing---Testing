@@ -1,6 +1,7 @@
 package panes;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class OptionPanes extends JFrame{
 
@@ -15,5 +16,9 @@ public class OptionPanes extends JFrame{
 
      //  String name = JOptionPane.showInputDialog("What is your name");
       // System.out.println(name);
+      //button options
+        String[] responses = {"No ponnayo","wesa balli","kari balla"};
+        ImageIcon icon = new ImageIcon("imgs/dudu.png");
+        JOptionPane.showOptionDialog(null,"you are retarded","ponnyo",JOptionPane.YES_NO_OPTION,JOptionPane.INFORMATION_MESSAGE,icon,responses, 0);
     }
 }
