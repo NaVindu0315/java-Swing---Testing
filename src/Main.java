@@ -1,5 +1,6 @@
 import layouts.BorderLayouts;
 import layouts.FlowLayouts;
+import layouts.GridLaouts;
 
 import javax.swing.*;
 import javax.swing.ImageIcon;
@@ -99,7 +100,8 @@ public class Main {
 
         ///controller
       //  new BorderLayouts();
-        new FlowLayouts();
+       // new FlowLayouts();
+        new GridLaouts();
 
 
 
