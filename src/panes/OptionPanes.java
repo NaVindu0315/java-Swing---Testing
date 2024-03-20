@@ -6,6 +6,10 @@ public class OptionPanes extends JFrame{
 
 
     public OptionPanes(){
-        JOptionPane.showMessageDialog(null,"Hi hutto","paka",JOptionPane.PLAIN_MESSAGE);
+        //JOptionPane.showMessageDialog(null,"Hi hutto","paka",JOptionPane.PLAIN_MESSAGE);
+        JOptionPane.showMessageDialog(null,"Hi hutto","paka",JOptionPane.INFORMATION_MESSAGE);
+        //JOptionPane.showMessageDialog(null,"Hi hutto","paka",JOptionPane.QUESTION_MESSAGE);
+     //   JOptionPane.showMessageDialog(null,"Hi hutto","paka",JOptionPane.WARNING_MESSAGE);
+     //   JOptionPane.showMessageDialog(null,"Hi hutto","paka",JOptionPane.ERROR_MESSAGE);
     }
 }
