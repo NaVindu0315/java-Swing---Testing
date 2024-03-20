@@ -1,3 +1,4 @@
+import components.TextFields;
 import layouts.BorderLayouts;
 import layouts.FlowLayouts;
 import layouts.GridLaouts;
@@ -108,8 +109,8 @@ public class Main {
     //new LayeredPanes();
 
         //LaunchPage launchpage = new LaunchPage();
-    new OptionPanes();
-
+   // new OptionPanes();
+    new TextFields();
 
 
 
