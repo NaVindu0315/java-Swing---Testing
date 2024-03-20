@@ -1,5 +1,10 @@
+import components.TextFields;
 import layouts.BorderLayouts;
 import layouts.FlowLayouts;
+import layouts.GridLaouts;
+import pages.LaunchPage;
+import panes.LayeredPanes;
+import panes.OptionPanes;
 
 import javax.swing.*;
 import javax.swing.ImageIcon;
@@ -29,7 +34,7 @@ public class Main {
         //chgning color
         frame.getContentPane().setBackground(Color.cyan);*/
         //calling the class
-        //MyFrame myFrame  = new MyFrame();
+        //components.MyFrame myFrame  = new components.MyFrame();
 
         //label create
         //creating image icon
@@ -92,19 +97,20 @@ public class Main {
         greenpanel.setLayout(null);*/
 
         //4th
-       // new buttonclass();
-        /*MyFrame frame1 =  new MyFrame();*/
+       // new btns.buttonclass();
+        /*components.MyFrame frame1 =  new components.MyFrame();*/
 
 
 
         ///controller
       //  new BorderLayouts();
-        new FlowLayouts();
+       // new FlowLayouts();
+       // new GridLaouts();
+    //new LayeredPanes();
 
-
-
-
-
+        //LaunchPage launchpage = new LaunchPage();
+   // new OptionPanes();
+    new TextFields();
 
 
 
