@@ -3,6 +3,7 @@ import layouts.FlowLayouts;
 import layouts.GridLaouts;
 import pages.LaunchPage;
 import panes.LayeredPanes;
+import panes.OptionPanes;
 
 import javax.swing.*;
 import javax.swing.ImageIcon;
@@ -106,8 +107,8 @@ public class Main {
        // new GridLaouts();
     //new LayeredPanes();
 
-        LaunchPage launchpage = new LaunchPage();
-
+        //LaunchPage launchpage = new LaunchPage();
+    new OptionPanes();
 
 
 
