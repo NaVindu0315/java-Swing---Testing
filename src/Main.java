@@ -1,6 +1,7 @@
 import layouts.BorderLayouts;
 import layouts.FlowLayouts;
 import layouts.GridLaouts;
+import pages.LaunchPage;
 import panes.LayeredPanes;
 
 import javax.swing.*;
@@ -103,9 +104,9 @@ public class Main {
       //  new BorderLayouts();
        // new FlowLayouts();
        // new GridLaouts();
-    new LayeredPanes();
+    //new LayeredPanes();
 
-
+        LaunchPage launchpage = new LaunchPage();
 
 
 
