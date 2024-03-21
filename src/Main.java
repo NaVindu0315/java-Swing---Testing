@@ -1,4 +1,5 @@
 import components.CheckBoxes;
+import components.ComboBoxes;
 import components.RadioButtons;
 import components.TextFields;
 import layouts.BorderLayouts;
@@ -114,7 +115,8 @@ public class Main {
    // new OptionPanes();
     //new TextFields();
         //new CheckBoxes();
-    new RadioButtons();
+    //new RadioButtons();
+        new ComboBoxes();
 
 
 
