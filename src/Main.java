@@ -1,3 +1,4 @@
+import components.CheckBoxes;
 import components.TextFields;
 import layouts.BorderLayouts;
 import layouts.FlowLayouts;
@@ -110,7 +111,10 @@ public class Main {
 
         //LaunchPage launchpage = new LaunchPage();
    // new OptionPanes();
-    new TextFields();
+    //new TextFields();
+        new CheckBoxes();
+
+
 
 
 
