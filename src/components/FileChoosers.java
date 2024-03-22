@@ -29,8 +29,16 @@ public class FileChoosers extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
     if (e.getSource()==btn)
     {
-        JFileChooser fileChooser = new JFileChooser();
 
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setCurrentDirectory(new File("."));
+        int response = fileChooser.showOpenDialog(null);
+        if (response == JFileChooser.APPROVE_OPTION)
+        {
+            File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
+            System.out.println(file);
+
+        }
     }
     }
 }
