@@ -8,10 +8,12 @@ public class FrameClass extends JFrame {
 
     public FrameClass(){
         this.add(dragClass);
+       // this.add(dragClass);
         this.setTitle("Drag And Drop demno");
         this.setSize(600,600);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setVisible(true);
+      //  this.setLayout(null);
 
 
     }
