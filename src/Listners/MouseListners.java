@@ -8,6 +8,8 @@ import java.awt.event.MouseListener;
 public class MouseListners extends JFrame implements MouseListener {
 
     JLabel lbl;
+    ImageIcon dudu;
+    ImageIcon bubu;
 
     public MouseListners(){
         lbl = new JLabel();
@@ -15,7 +17,14 @@ public class MouseListners extends JFrame implements MouseListener {
         lbl.setBackground(Color.red);
         lbl.setOpaque(true);
         this.add(lbl);
+        this.setLayout(new FlowLayout());
         lbl.addMouseListener(this);
+
+        dudu = new ImageIcon("dudu.png");
+        bubu = new ImageIcon("bubu.png");
+
+        lbl.setIcon(dudu);
+
 
         this.setSize(500,500);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -34,20 +43,26 @@ public class MouseListners extends JFrame implements MouseListener {
     public void mousePressed(MouseEvent e) {
         //System.out.println("Paka ebuwa");
         System.out.println("Payya  alluwa");
+        lbl.setBackground(Color.YELLOW);
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
         System.out.println("Payya Athariya");
+        lbl.setBackground(Color.BLACK);
     }
 
     @Override
     public void mouseEntered(MouseEvent e) {
-
+            System.out.println("Payya Gawata awa");
+            lbl.setBackground(Color.BLUE);
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
+        System.out.println("Payya Gawing Gya");
+        lbl.setBackground(Color.DARK_GRAY);
+
 
     }
 }
