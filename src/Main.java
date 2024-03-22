@@ -1,3 +1,4 @@
+import DRGDROP.FrameClass;
 import Listners.KeyListners;
 import Listners.MouseListners;
 import components.*;
@@ -124,7 +125,8 @@ public class Main {
        // new FileChoosers();
        // new ColorPickers();
     //new KeyListners();
-        new MouseListners();
+       // new MouseListners();
+        new FrameClass();
 
     }
 }
