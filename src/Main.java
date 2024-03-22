@@ -115,8 +115,8 @@ public class Main {
     //new RadioButtons();
         //new ComboBoxes();
 
-        new Sliders();
-
+       // new Sliders();
+        new ProgressBars();
 
 
 
