@@ -1,15 +1,4 @@
-import components.TextFields;
-import layouts.BorderLayouts;
-import layouts.FlowLayouts;
-import layouts.GridLaouts;
-import pages.LaunchPage;
-import panes.LayeredPanes;
-import panes.OptionPanes;
-
-import javax.swing.*;
-import javax.swing.ImageIcon;
-import javax.swing.border.Border;
-import java.awt.*;
+import DRGDROP.FrameClass;
 
 public class Main {
 
@@ -110,9 +99,20 @@ public class Main {
 
         //LaunchPage launchpage = new LaunchPage();
    // new OptionPanes();
-    new TextFields();
+    //new TextFields();
+        //new CheckBoxes();
+    //new RadioButtons();
+        //new ComboBoxes();
 
+       // new Sliders();
+       //new ProgressBars();
+       // new MenuButtons();
 
+       // new FileChoosers();
+       // new ColorPickers();
+    //new KeyListners();
+       // new MouseListners();
+        new FrameClass();
 
     }
 }
