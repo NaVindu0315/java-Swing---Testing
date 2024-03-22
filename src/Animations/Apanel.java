@@ -23,6 +23,7 @@ public class Apanel extends JPanel implements ActionListener {
         this.setPreferredSize(new Dimension(PANEL_WIDTH,PANEL_WIDTH));
         this.setBackground(Color.PINK);
         dudu = new ImageIcon("mocha.PNG").getImage();
+        background = new ImageIcon("bg.PNG").getImage();
         timer = new Timer(10,this);
         timer.start();
 
@@ -34,6 +35,7 @@ public class Apanel extends JPanel implements ActionListener {
     {
         super.paint(g);
         Graphics2D g2D = (Graphics2D) g;
+        g2D.drawImage(background,x,y,null);
         g2D.drawImage(dudu,x,y,null);
     }
 
