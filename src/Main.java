@@ -1,4 +1,5 @@
 import Listners.KeyListners;
+import Listners.MouseListners;
 import components.*;
 import layouts.BorderLayouts;
 import layouts.FlowLayouts;
@@ -122,7 +123,8 @@ public class Main {
 
        // new FileChoosers();
        // new ColorPickers();
-    new KeyListners();
+    //new KeyListners();
+        new MouseListners();
 
     }
 }
