@@ -1,4 +1,5 @@
 import DRGDROP.FrameClass;
+import Graphics.Gframe;
 import keybindings.Game;
 
 public class Main {
@@ -114,7 +115,9 @@ public class Main {
     //new KeyListners();
        // new MouseListners();
        // new FrameClass();
-        new Game();
+       // new Game();
+
+        new Gframe();
 
     }
 }
