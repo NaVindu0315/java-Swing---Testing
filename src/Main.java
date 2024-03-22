@@ -116,7 +116,8 @@ public class Main {
         //new ComboBoxes();
 
        // new Sliders();
-        new ProgressBars();
+       //new ProgressBars();
+        new MenuButtons();
 
 
 
