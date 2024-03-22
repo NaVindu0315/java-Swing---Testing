@@ -117,7 +117,9 @@ public class Main {
 
        // new Sliders();
        //new ProgressBars();
-        new MenuButtons();
+       // new MenuButtons();
+
+        new FileChoosers();
 
 
 
