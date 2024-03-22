@@ -1,3 +1,4 @@
+import Animations.AFrame;
 import DRGDROP.FrameClass;
 import Graphics.Gframe;
 import keybindings.Game;
@@ -117,7 +118,8 @@ public class Main {
        // new FrameClass();
        // new Game();
 
-        new Gframe();
+     //   new Gframe();
+        new AFrame();
 
     }
 }
