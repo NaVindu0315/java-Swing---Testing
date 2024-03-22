@@ -1,4 +1,5 @@
 import DRGDROP.FrameClass;
+import keybindings.Game;
 
 public class Main {
 
@@ -112,7 +113,8 @@ public class Main {
        // new ColorPickers();
     //new KeyListners();
        // new MouseListners();
-        new FrameClass();
+       // new FrameClass();
+        new Game();
 
     }
 }
