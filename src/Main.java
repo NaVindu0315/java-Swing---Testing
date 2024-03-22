@@ -1,3 +1,4 @@
+import Listners.KeyListners;
 import components.*;
 import layouts.BorderLayouts;
 import layouts.FlowLayouts;
@@ -120,8 +121,8 @@ public class Main {
        // new MenuButtons();
 
        // new FileChoosers();
-        new ColorPickers();
-
+       // new ColorPickers();
+    new KeyListners();
 
     }
 }
