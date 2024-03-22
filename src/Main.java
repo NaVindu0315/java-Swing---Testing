@@ -1,7 +1,4 @@
-import components.CheckBoxes;
-import components.ComboBoxes;
-import components.RadioButtons;
-import components.TextFields;
+import components.*;
 import layouts.BorderLayouts;
 import layouts.FlowLayouts;
 import layouts.GridLaouts;
@@ -116,7 +113,9 @@ public class Main {
     //new TextFields();
         //new CheckBoxes();
     //new RadioButtons();
-        new ComboBoxes();
+        //new ComboBoxes();
+
+        new Sliders();
 
 
 
