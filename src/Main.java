@@ -1,4 +1,5 @@
 import Authentication.SignUp;
+import bro_auth.IDPW;
 
 public class Main {
 
@@ -118,7 +119,8 @@ public class Main {
      //   new Gframe();
        // new AFrame();
         //new SignUp();
-        new SignUp();
+       // new SignUp();
+        IDPW idpw = new IDPW();
 
     }
 }
