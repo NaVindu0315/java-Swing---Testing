@@ -1,5 +1,7 @@
+import Authentication.Login;
 import Authentication.SignUp;
 import bro_auth.IDPW;
+import bro_auth.LoginPage;
 
 public class Main {
 
@@ -121,6 +123,7 @@ public class Main {
         //new SignUp();
        // new SignUp();
         IDPW idpw = new IDPW();
+        LoginPage loginPage = new LoginPage();
 
     }
 }
