@@ -25,6 +25,15 @@ public class SignUp extends JFrame implements ActionListener {
 
      JPanel panel;
 
+     int v_id;
+     String v_name;
+     String v_email;
+     int v_phone;
+     String v_address;
+     String v_password;
+
+
+
 
 
 
