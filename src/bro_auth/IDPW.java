@@ -12,7 +12,7 @@ public class IDPW {
         logininfo.put("Navindu","123456");
     }
 
-    protected HashMap getLoginInfo(){
+    public HashMap getLoginInfo(){
         return logininfo;
     }
 

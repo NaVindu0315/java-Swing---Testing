@@ -123,7 +123,7 @@ public class Main {
         //new SignUp();
        // new SignUp();
         IDPW idpw = new IDPW();
-        LoginPage loginPage = new LoginPage();
+        LoginPage loginPage = new LoginPage(idpw.getLoginInfo());
 
     }
 }
