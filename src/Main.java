@@ -1,7 +1,4 @@
-import Animations.AFrame;
-import DRGDROP.FrameClass;
-import Graphics.Gframe;
-import keybindings.Game;
+import Authentication.SignUp;
 
 public class Main {
 
@@ -119,7 +116,9 @@ public class Main {
        // new Game();
 
      //   new Gframe();
-        new AFrame();
+       // new AFrame();
+        //new SignUp();
+        new SignUp();
 
     }
 }
