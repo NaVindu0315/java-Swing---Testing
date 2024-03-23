@@ -35,9 +35,12 @@ public class SignUp extends JFrame implements ActionListener {
 
 
 
-
+    JLabel signlbl;
 
     public SignUp(){
+        signlbl = new JLabel("Sign Up");
+        signlbl.setBounds(610,0,100,30);
+
         //id
         lblid = new JLabel("ID");
         lblid.setBounds(500,30,200,40);
@@ -68,34 +71,35 @@ public class SignUp extends JFrame implements ActionListener {
 
         //address
         lbladdress = new JLabel("Address");
-        lbladdress.setBounds(500,200,200,40);
+        lbladdress.setBounds(500,230,200,40);
         txtaddress = new JTextField();
         txtaddress.setPreferredSize(new Dimension(250,40));
-        txtaddress.setBounds(720,200,250,40);
+        txtaddress.setBounds(720,230,250,40);
 
         //password
         lblpassword = new JLabel("Passowrd");
-        lblpassword.setBounds(500,250,200,40);
+        lblpassword.setBounds(500,280,200,40);
         txtpassword = new JTextField();
         txtpassword.setPreferredSize(new Dimension(250,40));
-        txtpassword.setBounds(720,250,250,40);
+        txtpassword.setBounds(720,280,250,40);
 
         //buttons
          btnsignup = new JButton("Sign Up");
-         btnsignup.setBounds(500,300,200,40);
+         btnsignup.setBounds(500,330,200,40);
          btnsignup.addActionListener(this);
 
          btnlogin = new JButton("Login");
-         btnlogin.setBounds(720,300,200,40);
+         btnlogin.setBounds(720,330,200,40);
          btnlogin.addActionListener(this);
 
 
         this.setTitle("Sign Up");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setResizable(false);
+        this.setResizable(true);
         this.setSize(1360,730);
         this.setVisible(true);
         this.setLayout(null);
+        this.add(signlbl);
 
         this.add(lblid);
         this.add(txtid);
@@ -105,6 +109,9 @@ public class SignUp extends JFrame implements ActionListener {
 
         this.add(lblemail);
         this.add(txtemail);
+
+        this.add(lblphone);
+        this.add(txtphone);
 
         this.add(lbladdress);
         this.add(txtaddress);
@@ -118,6 +125,21 @@ public class SignUp extends JFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
+        if(e.getSource()==btnsignup)
+        {
+            v_id = Integer.parseInt(txtid.getText());
+            v_name = txtname.getText();
+            v_email = txtemail.getText();
+            v_phone = Integer.parseInt(txtphone.getText());
+            v_address = txtaddress.getText();
+            v_password = txtpassword.getText();
+
+            System.out.println(v_id );
+            System.out.println(v_name );
+            System.out.println( v_email);
+            System.out.println(v_address);
+            System.out.println( v_password);
+        }
 
     }
 }
