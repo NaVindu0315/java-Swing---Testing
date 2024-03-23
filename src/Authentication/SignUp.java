@@ -50,6 +50,13 @@ public class SignUp extends JFrame implements ActionListener {
         txtemail.setPreferredSize(new Dimension(250,40));
         txtemail.setBounds(720,130,250,40);
 
+        //phone
+        lblphone = new JLabel("Phone");
+        lblphone.setBounds(500,180,200,40);
+        txtphone = new JTextField();
+        txtphone.setPreferredSize(new Dimension(250,40));
+        txtphone.setBounds(720,180,250,40);
+
 
 
         btnlogin = new JButton("Login");
