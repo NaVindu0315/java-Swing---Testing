@@ -29,11 +29,26 @@ public class SignUp extends JFrame implements ActionListener {
 
 
     public SignUp(){
+        //id
         lblid = new JLabel("ID");
-        lblid.setBounds(580,30,200,40);
+        lblid.setBounds(500,30,200,40);
         txtid = new JTextField();
         txtid.setPreferredSize(new Dimension(250,40));
-        txtid.setBounds(800,30,250,40);
+        txtid.setBounds(720,30,250,40);
+
+        //name
+        lblname = new JLabel("name");
+        lblname.setBounds(500,80,200,40);
+        txtname = new JTextField();
+        txtname.setPreferredSize(new Dimension(250,40));
+        txtname.setBounds(720,80,250,40);
+
+        //email
+        lblemail = new JLabel("email");
+        lblemail.setBounds(500,130,200,40);
+        txtemail = new JTextField();
+        txtemail.setPreferredSize(new Dimension(250,40));
+        txtemail.setBounds(720,130,250,40);
 
 
 
@@ -48,6 +63,12 @@ public class SignUp extends JFrame implements ActionListener {
 
         this.add(lblid);
         this.add(txtid);
+
+        this.add(lblname);
+        this.add(txtname);
+
+        this.add(lblemail);
+        this.add(txtemail);
 
 
     }
