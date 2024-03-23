@@ -85,11 +85,11 @@ public class SignUp extends JFrame implements ActionListener {
 
         //buttons
          btnsignup = new JButton("Sign Up");
-         btnsignup.setBounds(500,330,200,40);
+         btnsignup.setBounds(720,330,200,40);
          btnsignup.addActionListener(this);
 
          btnlogin = new JButton("Login");
-         btnlogin.setBounds(720,330,200,40);
+         btnlogin.setBounds(500,330,200,40);
          btnlogin.addActionListener(this);
 
 
@@ -139,6 +139,11 @@ public class SignUp extends JFrame implements ActionListener {
             System.out.println( v_email);
             System.out.println(v_address);
             System.out.println( v_password);
+        }
+        if(e.getSource()==btnlogin)
+        {
+            this.dispose();
+            new Login();
         }
 
     }
