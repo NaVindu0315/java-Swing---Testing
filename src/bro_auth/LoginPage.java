@@ -54,5 +54,44 @@ public class LoginPage extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
+        if (e.getSource()==btnreset)
+        {
+           txtuserid.setText("");
+           txtpw.setText("");
+        }
+
+        if (e.getSource()==btnlogin)
+        {
+            String userid = txtuserid.getText();
+            String pw = txtpw.getText();
+        //if pw field is used
+        //    String password = String.valueOf(txtpw.getPassword());
+            if(logininfo.containsKey(userid))
+            {
+                if (logininfo.get(userid).equals(pw))
+                {
+                    lblmsg.setForeground(Color.GREEN);
+                    lblmsg.setText("Pako");
+
+                    txtuserid.setText("");
+                    txtpw.setText("");
+                }
+                else
+                {
+                    lblmsg.setForeground(Color.RED);
+                    lblmsg.setText("Wrong Pssowrd");
+                    txtuserid.setText("");
+                    txtpw.setText("");
+                }
+            }
+            else
+            {
+                lblmsg.setForeground(Color.magenta);
+                lblmsg.setText("User Not Found");
+                txtuserid.setText("");
+                txtpw.setText("");
+            }
+        }
+
     }
 }
