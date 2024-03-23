@@ -8,14 +8,14 @@ import java.awt.event.ActionListener;
 public class SignUp extends JFrame implements ActionListener {
     JButton btnsignup;
     JButton btnlogin;
-    JLabel lblid;
+
     JLabel lblname;
     JLabel lblemail;
     JLabel lblphone;
     JLabel lbladdress;
     JLabel lblpassword;
 
-    JTextField txtid;
+
     JTextField txtname;
      JTextField txtemail;
      JTextField txtphone;
@@ -25,10 +25,10 @@ public class SignUp extends JFrame implements ActionListener {
 
      JPanel panel;
 
-     int v_id;
+
      String v_name;
      String v_email;
-     int v_phone;
+     String v_phone;
      String v_address;
      String v_password;
 
@@ -41,12 +41,6 @@ public class SignUp extends JFrame implements ActionListener {
         signlbl = new JLabel("Sign Up");
         signlbl.setBounds(610,0,100,30);
 
-        //id
-        lblid = new JLabel("ID");
-        lblid.setBounds(500,30,200,40);
-        txtid = new JTextField();
-        txtid.setPreferredSize(new Dimension(250,40));
-        txtid.setBounds(720,30,250,40);
 
         //name
         lblname = new JLabel("name");
@@ -101,9 +95,6 @@ public class SignUp extends JFrame implements ActionListener {
         this.setLayout(null);
         this.add(signlbl);
 
-        this.add(lblid);
-        this.add(txtid);
-
         this.add(lblname);
         this.add(txtname);
 
@@ -127,18 +118,18 @@ public class SignUp extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==btnsignup)
         {
-            v_id = Integer.parseInt(txtid.getText());
+
             v_name = txtname.getText();
             v_email = txtemail.getText();
-            v_phone = Integer.parseInt(txtphone.getText());
+            v_phone = txtphone.getText();
             v_address = txtaddress.getText();
             v_password = txtpassword.getText();
 
-            System.out.println(v_id );
             System.out.println(v_name );
             System.out.println( v_email);
             System.out.println(v_address);
             System.out.println( v_password);
+            //registeruser();
         }
         if(e.getSource()==btnlogin)
         {
@@ -147,4 +138,26 @@ public class SignUp extends JFrame implements ActionListener {
         }
 
     }
+/*
+    public void registeruser(){
+
+
+
+        user = addUserToDatabase(v_name,v_email,v_phone,v_address,v_password);
+
+
+    }
+    public User user;
+    private User addUserToDatabase(String name,String email, String phone,String address, String password)
+    {
+        User user = null;
+    final String db_url = "jdbc:mysql://localhost/myStore?serverTimezone=UTC";
+    final String USERNAME = "root";
+    final String PASSWORD = "";
+
+
+    try
+        return user;
+    }*/
+
 }
