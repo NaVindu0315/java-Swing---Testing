@@ -57,10 +57,30 @@ public class SignUp extends JFrame implements ActionListener {
         txtphone.setPreferredSize(new Dimension(250,40));
         txtphone.setBounds(720,180,250,40);
 
+        //address
+        lbladdress = new JLabel("Address");
+        lbladdress.setBounds(500,200,200,40);
+        txtaddress = new JTextField();
+        txtaddress.setPreferredSize(new Dimension(250,40));
+        txtaddress.setBounds(720,200,250,40);
+
+        //password
+        lblpassword = new JLabel("Passowrd");
+        lblpassword.setBounds(500,250,200,40);
+        txtpassword = new JTextField();
+        txtpassword.setPreferredSize(new Dimension(250,40));
+        txtpassword.setBounds(720,250,250,40);
+
+        //buttons
+         btnsignup = new JButton("Sign Up");
+         btnsignup.setBounds(500,300,200,40);
+         btnsignup.addActionListener(this);
+
+         btnlogin = new JButton("Login");
+         btnlogin.setBounds(720,300,200,40);
+         btnlogin.addActionListener(this);
 
 
-        btnlogin = new JButton("Login");
-        btnsignup = new JButton("Sign Up");
         this.setTitle("Sign Up");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
@@ -76,6 +96,14 @@ public class SignUp extends JFrame implements ActionListener {
 
         this.add(lblemail);
         this.add(txtemail);
+
+        this.add(lbladdress);
+        this.add(txtaddress);
+
+        this.add(lblpassword);
+        this.add(txtpassword);
+        this.add(btnlogin);
+        this.add(btnsignup);
 
 
     }
