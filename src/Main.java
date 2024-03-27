@@ -2,6 +2,8 @@ import Authentication.Login;
 import Authentication.SignUp;
 import bro_auth.IDPW;
 import bro_auth.LoginPage;
+import floor3d.FloorFrame;
+import floor3d.FloorPanel;
 
 public class Main {
 
@@ -122,8 +124,9 @@ public class Main {
        // new AFrame();
         //new SignUp();
        // new SignUp();
-        IDPW idpw = new IDPW();
-        LoginPage loginPage = new LoginPage(idpw.getLoginInfo());
+       // IDPW idpw = new IDPW();
+       // LoginPage loginPage = new LoginPage(idpw.getLoginInfo());
+        new FloorFrame();
 
     }
 }
