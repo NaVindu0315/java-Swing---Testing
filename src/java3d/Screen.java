@@ -4,7 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Screen extends JPanel {
-    polygonob polygonob = new polygonob(new int[]{10,200,10},new int[]{10,200,400}, Color.black);
+    //polygonob polygonob = new polygonob(new int[]{10,200,10},new int[]{10,200,400}, Color.black);
+    d3polygon dploy = new d3polygon(new int[]{2,4,2},new int[]{2,4,6}, new int[]{5,5,5},Color.black);
     public Screen()
     {
 
@@ -12,7 +13,7 @@ public class Screen extends JPanel {
 
     public void paintComponent(Graphics g)
     {
-        polygonob.drawPolygon(g);
+     //  polygonob.drawPolygon(g);
        // g.fillOval(10,10,500,500);
 
     }
