@@ -6,13 +6,16 @@ public class polygonob {
     Polygon p = new Polygon();
     Color c;
 
-    public  polygonob(int[]x , int []y,Color c)
+    public  polygonob(double[]x , double []y,Color c)
     {
 
-        p.xpoints = x;
-        p.ypoints = y;
-        p.npoints = x.length;
-        this.c =c;
+        for (int i= 0;i<x.length;i++ )
+        {
+            p.addPoint((int)x[i],(int)y[i]);
+
+            this.c =c;
+        }
+
     }
 
     void drawPolygon(Graphics g)

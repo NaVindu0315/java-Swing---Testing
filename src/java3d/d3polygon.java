@@ -10,14 +10,15 @@ public class d3polygon {
 
     Polygon p = new Polygon();
     Color c;
-    int[]x;
-    int[]y;
-    int []z;
+    double[]x;
+    double[]y;
+    double []z;
 
 
 
 
-    public d3polygon(int[]x ,int []y ,int[]z , Color c ){
+
+    public d3polygon(double[]x ,double []y ,double[]z , Color c ){
 
         this.x = x;
         this.y = y;
