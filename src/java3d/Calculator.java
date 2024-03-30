@@ -11,6 +11,9 @@ public class Calculator {
     {
         return 0;
     }
+    void setStuff(){
+
+    }
 
 
 }
