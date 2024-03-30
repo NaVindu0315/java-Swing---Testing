@@ -129,7 +129,7 @@ public class Main {
        // IDPW idpw = new IDPW();
        // LoginPage loginPage = new LoginPage(idpw.getLoginInfo());
         //new FloorFrame();
-        new DDDTutorial();
+        new home3d();
 
     }
 }
