@@ -2,11 +2,11 @@ package java3d;
 
 import java.awt.*;
 
-public class polygonob {
+public class PolygonObject {
     Polygon p = new Polygon();
     Color c;
 
-    public  polygonob(double[]x , double []y,Color c)
+    public PolygonObject(double[]x , double []y, Color c)
     {
         Screen.Numberofploygons++;
 

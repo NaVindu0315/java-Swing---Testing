@@ -1,52 +1,29 @@
+package java3d;
+
 import java.awt.Color;
+import java.awt.Graphics;
 import java.awt.Polygon;
 
 
-public class DPolygon {
+public class PolygonObject {
+    Polygon P;
     Color c;
-    double[] x, y, z;
-    int poly = 0;
+    double AvgDist = 0;
 
-    public DPolygon(double[] x, double[] y, double[] z, Color c)
+    public PolygonObject(double[] x, double[] y, Color c)
     {
-        Screen.NumberOf3DPolygons++;
-        this.x = x;
-        this.y = y;
-        this.z = z;
+        Screen.NumberOfPolygons++;
+        P = new Polygon();
+        for(int i = 0; i < x.length; i++)
+            P.addPoint((int)x[i], (int)y[i]);
         this.c = c;
-        createPolygon();
     }
 
-    void createPolygon()
+    void drawPolygon(Graphics g)
     {
-        double total = 0;
-        double[] newX = new double[x.length];
-        double	[] newY = new double[x.length];
-
-        for(int i = 0; i < x.length; i++)
-        {
-            newX[i] = 500 + 50 * Calculator.CalculatePositionX(Screen.ViewFrom, Screen.ViewTo, x[i], y[i], z[i]);
-            newY[i] = 500 + 50 * Calculator.CalculatePositionY(Screen.ViewFrom, Screen.ViewTo, x[i], y[i], z[i]);
-            total += Calculator.t;
-        }
-
-        poly = Screen.NumberOfPolygons;
-        Screen.DrawablePolygons[Screen.NumberOfPolygons] = new PolygonObject(newX, newY, c);
-        Screen.DrawablePolygons[poly].AvgDist = total / x.length;
-    }
-
-    void updatePolygon()
-    {
-        double[] newX = new double[x.length];
-        double	[] newY = new double[x.length];
-
-        for(int i = 0; i < x.length; i++)
-        {
-            newX[i] = 500 + 50 * Calculator.CalculatePositionX(Screen.ViewFrom, Screen.ViewTo, x[i], y[i], z[i]);
-            newY[i] = 500 + 50 * Calculator.CalculatePositionY(Screen.ViewFrom, Screen.ViewTo, x[i], y[i], z[i]);
-        }
-
-        Screen.DrawablePolygons[poly] = new PolygonObject(newX, newY, c);
-        Screen.NumberOfPolygons --;
+        g.setColor(c);
+        g.fillPolygon(P);
+        g.setColor(Color.black);
+        g.drawPolygon(P);
     }
 }
