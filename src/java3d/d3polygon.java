@@ -24,6 +24,11 @@ public class d3polygon {
         this.y = y;
         this.z = z;
         this.c =c;
+        createPolygon();
+    }
+    void  createPolygon(){
+
+        Screen.DrawablePolygons[Screen.Numberofploygons] =new polygonob(x,y,c);
     }
 
 

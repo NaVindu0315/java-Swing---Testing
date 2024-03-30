@@ -8,6 +8,7 @@ public class polygonob {
 
     public  polygonob(double[]x , double []y,Color c)
     {
+        Screen.Numberofploygons++;
 
         for (int i= 0;i<x.length;i++ )
         {
