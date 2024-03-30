@@ -1,25 +1,25 @@
 package java3d;
+
 import java.awt.Dimension;
 import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 
-public class DDDTutorial extends JFrame{
+public class DDDTutorial extends JFrame {
 
     static Dimension ScreenSize = Toolkit.getDefaultToolkit().getScreenSize();
     static JFrame F = new DDDTutorial();
-    Screen ScreenObject = new Screen();
+    Screen ScreenObject = new Screen(); // Create a Screen object
 
-    public DDDTutorial()
-    {
+    public DDDTutorial() {
         add(ScreenObject);
         setUndecorated(true);
         setSize(ScreenSize);
         setVisible(true);
     }
 
-    public static void main(String[] args)
-    {
-
+    public static void main(String[] args) {
+        // Create a new instance of DDDTutorial (optional)
+        // New DDDTutorial();
     }
 }

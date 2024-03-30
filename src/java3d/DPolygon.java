@@ -19,29 +19,26 @@ public class DPolygon {
         createPolygon();
     }
 
-    void createPolygon()
-    {
+    void createPolygon() {
         poly = Screen.NumberOfPolygons;
-        Screen.DrawablePolygons[Screen.NumberOfPolygons] = new PolygonObject(new double[]{}, new double[]{}, c);
         updatePolygon();
     }
 
-    void updatePolygon()
-    {
+    void updatePolygon() {
         double dx = - 50 * Calculator.CalculatePositionX(Screen.ViewFrom, Screen.ViewTo, Screen.ViewTo[0], Screen.ViewTo[1], Screen.ViewTo[2]);
         double dy = - 50 * Calculator.CalculatePositionY(Screen.ViewFrom, Screen.ViewTo, Screen.ViewTo[0], Screen.ViewTo[1], Screen.ViewTo[2]);
         double[] newX = new double[x.length];
-        double[] newY = new double[x.length];
+        double[] newY = new double[y.length];
 
-        for(int i = 0; i < x.length; i++)
-        {
+        for(int i = 0; i < x.length; i++) {
             newX[i] = dx + DDDTutorial.ScreenSize.getWidth()/2 + 50 * Calculator.CalculatePositionX(Screen.ViewFrom, Screen.ViewTo, x[i], y[i], z[i]);
             newY[i] = dy + DDDTutorial.ScreenSize.getHeight()/2 + 50 * Calculator.CalculatePositionY(Screen.ViewFrom, Screen.ViewTo, x[i], y[i], z[i]);
         }
 
+        // Update Screen.DrawablePolygons with calculated coordinates
         Screen.DrawablePolygons[poly] = new PolygonObject(newX, newY, c);
         Screen.DrawablePolygons[poly].AvgDist = GetDist();
-        Screen.NumberOfPolygons --;
+        Screen.NumberOfPolygons--;
     }
 
     double GetDist()
