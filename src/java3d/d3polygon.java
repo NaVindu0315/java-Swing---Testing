@@ -36,7 +36,7 @@ public class d3polygon {
 
          }
 
-        Screen.DrawablePolygons[Screen.Numberofploygons] =new polygonob(x,y,c);
+        Screen.DrawablePolygons[Screen.Numberofploygons] =new polygonob(newx,newy,c);
     }
 
 
