@@ -1,9 +1,7 @@
 package java3d;
 
-import java.awt.*;
-
 public class Calculator {
-    static double DrawX = 0, DrawY = 0, t;
+    static double DrawX = 0, DrawY = 0;
     static double CalculatePositionX(double[] ViewFrom, double[] ViewTo, double x, double y, double z)
     {
         setStuff(ViewFrom, ViewTo, x, y, z);
@@ -23,9 +21,13 @@ public class Calculator {
         Vector PlaneVector1 = ViewVector.CrossProduct(DirectionVector);
         Vector PlaneVector2 = ViewVector.CrossProduct(PlaneVector1);
 
+        Vector RotationVector = GetRotationVector(ViewFrom, ViewTo);
+        Vector WeirdVector1 = ViewVector.CrossProduct(RotationVector);
+        Vector WeirdVector2 = ViewVector.CrossProduct(WeirdVector1);
+
         Vector ViewToPoint = new Vector(x - ViewFrom[0], y - ViewFrom[1], z - ViewFrom[2]);
 
-        t = (ViewVector.x * ViewTo[0] + ViewVector.y*ViewTo[1] + ViewVector.z*ViewTo[2]
+        double 	t = (ViewVector.x * ViewTo[0] + ViewVector.y*ViewTo[1] + ViewVector.z*ViewTo[2]
                 -  (ViewVector.x * ViewFrom[0] + ViewVector.y*ViewFrom[1] + ViewVector.z*ViewFrom[2]))
                 /  (ViewVector.x * ViewToPoint.x + ViewVector.y*ViewToPoint.y + ViewVector.z*ViewToPoint.z);
 
@@ -35,31 +37,26 @@ public class Calculator {
 
         if(t > 0)
         {
-            DrawX = PlaneVector2.x * x + PlaneVector2.y * y + PlaneVector2.z * z;
-            DrawY = PlaneVector1.x * x + PlaneVector1.y * y + PlaneVector1.z * z;
+            DrawX = WeirdVector2.x * x + WeirdVector2.y * y + WeirdVector2.z * z;
+            DrawY = WeirdVector1.x * x + WeirdVector1.y * y + WeirdVector1.z * z;
         }
     }
 
-    public static class PolygonObject {
-        Polygon P;
-        Color c;
-        double AvgDist = 0;
+    static Vector GetRotationVector(double[] ViewFrom, double[] ViewTo)
+    {
+        double dx = Math.abs(ViewFrom[0]-ViewTo[0]);
+        double dy = Math.abs(ViewFrom[1]-ViewTo[1]);
+        double xRot, yRot;
 
-        public PolygonObject(double[] x, double[] y, Color c)
-        {
-            Screen.NumberOfPolygons++;
-            P = new Polygon();
-            for(int i = 0; i < x.length; i++)
-                P.addPoint((int)x[i], (int)y[i]);
-            this.c = c;
-        }
+        xRot=dy/(dx+dy);
+        yRot=dx/(dx+dy);
 
-        void drawPolygon(Graphics g)
-        {
-            g.setColor(c);
-            g.fillPolygon(P);
-            g.setColor(Color.black);
-            g.drawPolygon(P);
-        }
+        if(ViewFrom[1]>ViewTo[1])
+            xRot = -xRot;
+        if(ViewFrom[0]<ViewTo[0])
+            yRot = -yRot;
+
+        Vector V = new Vector(xRot, yRot, 0);
+        return V;
     }
 }
