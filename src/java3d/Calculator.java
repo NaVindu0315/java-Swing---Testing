@@ -1,3 +1,6 @@
+package java3d;
+
+import java.awt.*;
 
 public class Calculator {
     static double DrawX = 0, DrawY = 0, t;
@@ -34,6 +37,29 @@ public class Calculator {
         {
             DrawX = PlaneVector2.x * x + PlaneVector2.y * y + PlaneVector2.z * z;
             DrawY = PlaneVector1.x * x + PlaneVector1.y * y + PlaneVector1.z * z;
+        }
+    }
+
+    public static class PolygonObject {
+        Polygon P;
+        Color c;
+        double AvgDist = 0;
+
+        public PolygonObject(double[] x, double[] y, Color c)
+        {
+            Screen.NumberOfPolygons++;
+            P = new Polygon();
+            for(int i = 0; i < x.length; i++)
+                P.addPoint((int)x[i], (int)y[i]);
+            this.c = c;
+        }
+
+        void drawPolygon(Graphics g)
+        {
+            g.setColor(c);
+            g.fillPolygon(P);
+            g.setColor(Color.black);
+            g.drawPolygon(P);
         }
     }
 }
