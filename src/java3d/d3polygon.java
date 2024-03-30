@@ -27,6 +27,14 @@ public class d3polygon {
         createPolygon();
     }
     void  createPolygon(){
+         double[] newx = new double[x.length];
+         double[] newy = new double[y.length];
+         for(int i=0;i<x.length;i++)
+         {
+             newx[i] = Calculator.CalculatePositionx(Screen.ViewFrom,Screen.ViewTo,x[i],y[i],z[i]);
+             newy[i] = Calculator.CalculatePositionx(Screen.ViewFrom,Screen.ViewTo,x[i],y[i],z[i]);
+
+         }
 
         Screen.DrawablePolygons[Screen.Numberofploygons] =new polygonob(x,y,c);
     }
