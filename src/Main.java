@@ -1,5 +1,6 @@
 import Authentication.Login;
 import Authentication.SignUp;
+import DRGDROP.FrameClass;
 import bro_auth.IDPW;
 import bro_auth.LoginPage;
 import floor3d.FloorFrame;
@@ -7,6 +8,7 @@ import floor3d.FloorPanel;
 import java3d.DDDTutorial;
 import java3d.Screen;
 import java3d.home3d;
+import new3d.DisplayFrame;
 
 import javax.swing.*;
 
@@ -132,6 +134,7 @@ public class Main {
        // IDPW idpw = new IDPW();
        // LoginPage loginPage = new LoginPage(idpw.getLoginInfo());
         //new FloorFrame();
-       new DDDTutorial();
+       new FrameClass();
+      //  new DisplayFrame();
     }
 }
